@@ -21,14 +21,14 @@ WISEST (Which Systematic Evidence Synthesis is besT) is an innovative tool desig
 - [Contact](#contact)
 
 ## Overview
-WISEST helps reduce the cognitive burden on researchers and health practitioners by automating systematic review quality appraisals. This tool ensures faster, more consistent assessments and supports better evidence-based decision-making. It integrates deep learning and advanced information retrieval models to respond to the ROBIS and AMSTAR-2 frameworks efficiently.
+The WISEST Annotation Platform reduces the cognitive burden on researchers and health practitioners by automating systematic review quality appraisals. This tool ensures faster, more consistent assessments and supports evidence-based decision-making. It integrates advanced deep learning models to provide automated responses aligned with the ROBIS and AMSTAR-2 frameworks.
 
 ## Features
 - Automated quality assessment for systematic reviews.
 - Integration with ROBIS and AMSTAR-2 for evaluating SRs.
-- User-friendly interface accessible to both technical and non-technical users.
-- Open-source codebase for easy customization and integration.
-- Facilitates evidence-based decision-making with reduced manual effort.
+- User-friendly interface for technical and non-technical users.
+- Facilitates systematic review annotation and evaluation in an organized manner.
+- Open-source for easy customization and further development.
 
 ## Installation
 
