@@ -1,0 +1,61 @@
+services:
+  backend:
+    container_name: wisest-annotate-backend
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "3016:3016"
+
+    restart: unless-stopped
+    depends_on:
+      database:
+        condition: service_healthy
+    networks:
+      - app-network
+    environment:
+      - FRONTEND_URL=https://wisest-annotate.ls3.rnet.torontomu.ca 
+      - MYSQL_HOST=database
+      - MYSQL_PASSWORD=Aeskcam123@45
+      - MYSQL_ROOT_PASSWORD=Aeskcam123@45
+      - MYSQL_DB=WISEST_ANNOTATE_DB
+      - MYSQL_USER=root
+      - MYSQL_PORT=3306
+      - JWT_SECRET=ZXCHJKHAS^*@KJHASKDJHASDASDXISDASD1233434fsfs23
+
+  frontend:
+    container_name: wisest-annotate-frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3015:3015"
+    networks:
+      - app-network
+    environment:
+      - REACT_APP_API_BASE_URL=https://wisest-annotate.ls3.rnet.torontomu.ca/api
+
+  database:
+    container_name: wisest-annotate-database
+    image: mysql:latest
+    environment:
+      - MYSQL_HOST=database
+      - MYSQL_ROOT_PASSWORD=Aeskcam123@45
+      - MYSQL_PASSWORD=Aeskcam123@45
+      - MYSQL_DB=WISEST_ANNOTATE_DB
+    volumes:
+      - ./database/data:/var/lib/mysql
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/schema.sql
+    restart: unless-stopped
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost -p$${MYSQL_ROOT_PASSWORD} || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+networks:
+  app-network:
+    driver: bridge
+
