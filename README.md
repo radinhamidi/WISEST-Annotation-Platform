@@ -108,7 +108,8 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 5. Open a pull request.
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the [Creative Commons Attribution-NonCommercial License (CC BY-NC)](https://creativecommons.org/licenses/by-nc/4.0/). See the [LICENSE](LICENSE) file for more details.
+
 
 ## Contact
 For any questions or issues, please reach out via [GitHub Issues](https://github.com/radinhamidi/WISEST-Annotation-Platform/issues).
