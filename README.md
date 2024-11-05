@@ -39,6 +39,12 @@ The WISEST Annotation Platform reduces the cognitive burden on researchers and h
 - **Node.js** and **npm** for frontend development.
 - **Python 3.x** for backend development.
 
+## Dependencies
+- **Python**: 3.x
+- **Flask**: x.x.x
+- **React**: x.x.x
+- **Docker**: x.x.x
+
 ### Steps
 1. **Clone the repository**:
 
@@ -117,8 +123,3 @@ For any questions or issues, please reach out via [GitHub Issues](https://github
 ## Changelog
 See the [CHANGELOG](CHANGELOG.md) for details on version updates and changes.
 
-## Dependencies
-- **Python**: 3.x
-- **Flask**: x.x.x
-- **React**: x.x.x
-- **Docker**: x.x.x
