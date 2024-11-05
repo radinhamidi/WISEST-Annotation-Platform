@@ -81,10 +81,9 @@ The WISEST Annotation Platform is composed of the following components:
 
 ## Technologies Used
 - **Frontend**: React, HTML, CSS, JavaScript
-- **Backend**: Python, Flask
+- **Backend**: Node.js
 - **Database**: PostgreSQL
 - **Deployment**: Docker, Docker Compose
-- **Data Processing**: Pandas, NumPy
 
 ## Screenshots
 Here is an example of the WISEST Annotation Platform interface:
