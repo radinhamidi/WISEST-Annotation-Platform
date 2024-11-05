@@ -41,7 +41,6 @@ The WISEST Annotation Platform reduces the cognitive burden on researchers and h
 
 ## Dependencies
 - **Python**: 3.x
-- **Flask**: x.x.x
 - **React**: 18.3.1
 - **Docker**: 27.3.1
 - **Node.js**: 22+
