@@ -48,28 +48,31 @@ The WISEST Annotation Platform reduces the cognitive burden on researchers and h
 ### Steps
 1. **Clone the repository**:
 
-    git clone https://github.com/radinhamidi/WISEST-Annotation-Platform.git
-    cd WISEST-Annotation-Platform
+    `git clone https://github.com/radinhamidi/WISEST-Annotation-Platform.git`
+   
+    `cd WISEST-Annotation-Platform`
 
-2. **Run the app using Docker Compose**:
+3. **Run the app using Docker Compose**:
 
-    docker-compose up --build
+    `docker-compose up --build`
 
-3. **Manual setup (if needed)**:
+4. **Manual setup (if needed)**:
    - Navigate to the `backend/` and `frontend/` directories and follow their `README.md` setup instructions.
 
 ## Usage
 1. **Start the backend server**:
 
-    cd backend
-    python app.py
+    `cd backend`
+   
+    `python app.py`
 
-2. **Start the frontend**:
+3. **Start the frontend**:
 
-    cd frontend
-    npm start
+    `cd frontend`
+   
+    `npm start`
 
-3. **Access the platform**:
+5. **Access the platform**:
    Open your web browser and go to `http://localhost:3000` to start using the WISEST Annotation Platform.
 
 ## System Architecture
