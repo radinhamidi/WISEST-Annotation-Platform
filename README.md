@@ -56,8 +56,6 @@ The WISEST Annotation Platform reduces the cognitive burden on researchers and h
 
     `docker-compose up --build`
 
-4. **Manual setup (if needed)**:
-   - Navigate to the `backend/` and `frontend/` directories and follow their `README.md` setup instructions.
 
 ## Usage
 1. **Start the backend server**:
